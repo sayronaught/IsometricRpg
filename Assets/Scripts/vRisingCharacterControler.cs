@@ -38,7 +38,7 @@ public class vRisingCharacterControler : MonoBehaviour
         }
         target = new Vector3(target.x, transform.position.y, target.z);
         //transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * WalkSpeed);
-        TurnToTarget.rotation = Quaternion.RotateTowards(TurnToTarget.rotation, toRotation, Time.deltaTime * 180f);
+        TurnToTarget.rotation = Quaternion.RotateTowards(TurnToTarget.rotation, toRotation, Time.deltaTime * 800f);
         if (Input.GetMouseButton(0))
         { // left click, some attacks at some point
         }
@@ -50,7 +50,7 @@ public class vRisingCharacterControler : MonoBehaviour
                                                     -Input.GetAxis("Mouse X") * xMouseSpeed);
 
                     Camera.main.transform.RotateAround(around,
-                                                    transform.right,
+                                                    transform.right * -1,
                                                     -Input.GetAxis("Mouse Y") * yMouseSpeed);
             //Camera.main.transform.rotation = Quaternion.
             Camera.main.transform.LookAt(transform.position, Vector3.up);
