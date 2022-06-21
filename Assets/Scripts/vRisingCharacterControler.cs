@@ -49,12 +49,18 @@ public class vRisingCharacterControler : MonoBehaviour
                                                     transform.up,
                                                     -Input.GetAxis("Mouse X") * xMouseSpeed);
 
-                    Camera.main.transform.RotateAround(around,
-                                                    transform.right * -1,
-                                                    -Input.GetAxis("Mouse Y") * yMouseSpeed);
+                         //You zoom in and out on the scrollwheel instead of with right click
+                         /*Camera.main.transform.RotateAround(around,
+                                            transform.right * -1,
+                                            -Input.GetAxis("Mouse Y") * yMouseSpeed);*/
+
+
             //Camera.main.transform.rotation = Quaternion.
             Camera.main.transform.LookAt(transform.position, Vector3.up);
         }
+
+
+        //Character seems to slide when moving, hold down one of W (or A,S,D) for more than a second and let go, the character continues to move forward for a little while after you let go
         if (Input.GetAxis("Vertical") != 0f)
         { // forward/back
             dir = new Vector3( Camera.main.transform.forward.x,0f, Camera.main.transform.forward.z);
