@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<SkillSystem>
+	<Skills>
+		<Skill name="Digging">
+			<keyWord>Digging</keyWord>
+			<toolTip>This skill determins how well you are at digging in soft ground</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>None</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Mining">
+			<keyWord>Mining</keyWord>
+			<toolTip>This skill determins how well you are at digging in the bedrock</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Digging</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>10</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Lumberjacking">
+			<keyWord>Lumberjacking</keyWord>
+			<toolTip>This skill is required to harvest wood from trees</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>None</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Gathering">
+			<keyWord>Gathering</keyWord>
+			<toolTip>This skill determins how fast you are at gathering common herbs and berries and the amount you succesfull gather.</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>None</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+	</Skills>
+</SkillSystem>

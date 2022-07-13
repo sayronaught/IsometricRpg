@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<StatSystem>
+	<Stats>
+		<Stat name="Strength">
+			<keyWord>strength, str</keyWord>
+			<toolTip>Characters overall strength "add more flavor text"</toolTip>
+				<startStat>5</startStat>
+				<capStat>100</capStat>
+				<Color>FFFFFF</Color>
+		</Stat>
+		
+		<Stat name="Stamina">
+			<keyWord>stamina, stam</keyWord>
+			<toolTip>Characters stamina "add more flavor text"</toolTip>
+				<startStat>5</startStat>
+				<capStat>100</capStat>
+				<Color>550000</Color>
+		</Stat>
+		
+		<Stat name="Dexterity">
+			<keyWord>Dexterity, Dex</keyWord>
+			<toolTip>Characters Dexterity "add more flavor text"</toolTip>
+				<startStat>5</startStat>
+				<capStat>100</capStat>
+				<Color>AAAAAA</Color>
+		</Stat>
+		
+		<Stat name="Fortitude">
+			<keyWord>Fortitude, Hp</keyWord>
+			<toolTip>Characters Fortitude "add more flavor text"</toolTip>
+				<startStat>5</startStat>
+				<capStat>100</capStat>
+				<Color>111111</Color>
+		</Stat>
+		
+		<Stat name="Constitution">
+			<keyWord>constitution, con</keyWord>
+			<toolTip>Characters constitution "add more flavor text"</toolTip>
+				<startStat>5</startStat>
+				<capStat>100</capStat>
+				<Color>550000</Color>
+		</Stat>
+		
+		<Stat name="charWeight">
+			<keyWord>Character Weight</keyWord>
+			<toolTip>The amount of weight a player can carry</toolTip>
+				<startStat>charHeight</startStat>
+				<formel>charHeight*Fat*Fortitude</formel>
+				<currentCharWeight></currentCharWeight>
+				<weightScale>Kg</weightScale>
+				<Color>550000</Color>
+		</Stat>
+		
+		<Stat name="Body Mass">
+			<keyWord>bodyMass, BM</keyWord>
+			<toolTip>This attribute should not be showen, unless in debug mode.</toolTip>
+				<startStat>currentCharWeight*charHeight</startStat>
+				<Color>550000</Color>
+		</Stat>
+		
+		<Stat name="Bone Strength">
+			<keyWord>boneStrenght, bone, strength</keyWord>
+			<toolTip>This attribute should not be showen, unless in debug mode.</toolTip>
+				<startStat>5</startStat>
+				<capStat>200</capStat>
+				<Color>550000</Color>
+		</Stat>
+	</Stats>
+</StatSystem>

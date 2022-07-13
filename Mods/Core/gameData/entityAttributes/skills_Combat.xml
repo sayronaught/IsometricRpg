@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<SkillSystem>
+	<Skills>
+		<Skill name="Combat">
+			<keyWord>Combat</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>SkillSystem</category>
+				<toolTip>Any type or form of combat</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>SkillSystem</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+
+		<Skill name="Swordmanship">
+			<keyWord>Combat, Swordmanship</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat</category>
+				<toolTip>The fine combat art of Swordmanship!</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Combat</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="basicSwordFighting">
+			<keyWord>Combat, basic Sword Fighting, Sword, fighting, basic</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat,Swordmanship</category>
+				<toolTip>Basic Sword Fighting, any farmboy can swing a stick!</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Swordmanship</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Slashing">
+			<keyWord>Combat, basic Sword Fighting, Sword, fighting, basic, Sword Slashing, Slashing</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat,Swordmanship,basicSwordFighting</category>
+				<toolTip>A basic Sword Slash, a good move for anyone new to sword fighting</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>basicSwordFighting</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Stabing">
+			<keyWord>Combat, basic Sword Fighting, Sword, fighting, basic, Sword Stabing</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat,Swordmanship,basicSwordFighting</category>
+				<toolTip>A basic Sword stab, a quick straight stab</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>basicSwordFighting</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>10</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Unarmed Combat">
+			<keyWord>Combat, Unarmed Combat, Unarmed</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat</category>
+				<toolTip>Unrefined and Brutal, almost always available..</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Combat</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Brawling">
+			<keyWord>Combat, Unarmed Combat, Unarmed, Brawling</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat, Unarmed Combat</category>
+				<toolTip>Disorderly, violent and handy at and pub fight</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Unarmed Combat</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="RightHandFishSwing">
+			<keyWord>Combat, Unarmed Combat, Unarmed, Brawling, Fist Swing</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat, Unarmed Combat, Brawling</category>
+				<toolTip>Swing that right hook of yours!</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Brawling</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Boxing">
+			<keyWord>Combat, Unarmed Combat, Unarmed, Boxing</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat, Unarmed Combat</category>
+				<toolTip>The fist fighting of a gentleman!</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Unarmed Combat</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>15</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="Uppercut">
+			<keyWord>Combat, Unarmed Combat, Unarmed, Boxing, Uppercut</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat, Unarmed Combat, Boxing</category>
+				<toolTip>Send your opponent flying!</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Boxing</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="KickBoxing">
+			<keyWord>Combat, Unarmed Combat, Karate</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat, Unarmed Combat</category>
+				<toolTip>Hu Ha! Look at me!</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>Unarmed Combat</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>50</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+		
+		<Skill name="RoundhouseKick">
+			<keyWord>Combat, Unarmed Combat, KickBoxing, RoundhouseKick</keyWord>
+			<!-- Category to categorize this skill under -->
+				<category>Combat, Unarmed Combat, KickBoxing</category>
+				<toolTip>Swing those hips!</toolTip>
+			<!-- Object Attributes -->
+				<MathToGain>0.1</MathToGain>
+				<startAmount>0</startAmount>
+				<CapAmount>100.0</CapAmount>
+				<SkillRequiredToUnlock>KickBoxing</SkillRequiredToUnlock>
+				<SkillAmountRequiredToUnlock>0</SkillAmountRequiredToUnlock>
+				<DecayMath>0</DecayMath>
+				<Color>550000</Color>
+		</Skill>
+	</Skills>
+</SkillSystem>

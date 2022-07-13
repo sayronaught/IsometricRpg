@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<name>
+	<nameObject>
+		<!-- Object keyword, name and description -->
+			<keyWord>keywords,here</keyWord>
+			<name>objectName</name>
+			<toolTip>Description goes here</toolTip>		<!-- Description appears when mousing over or in a description field -->
+			<!-- Object Visual Apperance -->
+				<unityMaterialPath>PathToMaterialFolder<!-- or left empty! --></unityMaterialPath>	<!-- IF! this entry has anything in it, we will try to load and use a material for this object, Else! we will expect the next 3 entries to contain data!-->
+				<materialPath>PathToMaterial<!-- or left empty! --></materialPath>					<!-- Leave this empty if you are using unityMaterialPath!, Else leave unityMaterialPath empty if you are using a custom setup!-->
+				<shaderPath>PathToShader<!-- or left empty! --></shaderPath>						<!-- Leave this empty if you are using unityMaterialPath!, Else leave unityMaterialPath empty if you are using a custom setup!-->
+				<texturePath>PathToTexture<!-- or left empty! --></texturePath>						<!-- Leave this empty if you are using unityMaterialPath!, Else leave unityMaterialPath empty if you are using a custom setup!-->
+				<!-- Object Attributes -->
+					<weight>0</weight>						<!-- The total weight of 1 amount of this item -->
+					<minSize>0</minSize>
+					<maxSize>0</maxSize>
+					<!-- Consumption gains -->
+						<energy>0</energy>
+					<!-- Nutrient -->
+						<carbohydrates>0</carbohydrates>
+						<protein>0</protein>
+						<fat>0</fat>
+						<cholesterol>0</cholesterol>
+						<dietaryFiber>0</dietaryFiber>
+					<!-- Vitamins -->
+						<vitamineA>0</vitamineA>
+						<thiaminB1>0g</thiaminB1>
+						<riboflavinB2>0</riboflavinB2>
+						<niacinB3>0</niacinB3>
+						<pyridoxineB6>0</pyridoxineB6>
+						<folateB9>0</folateB9>
+						<cobalaminB12>0</cobalaminB12>
+						<vitamineC>0</vitamineC>
+						<vitamineD>0</vitamineD>
+						<vitamineE>0</vitamineE>
+						<vitamineK>0</vitamineK>
+					<!-- Minerals -->
+						<calcium>0</calcium>
+						<iron>0</iron>
+			<!-- if object can be used for dyeing -->
+				<dyeColorRed>0</dyeColorRed>
+				<dyeColorGreen>0</dyeColorGreen>
+				<dyeColorBlue>0</dyeColorBlue>
+		<!-- Crafting Dependencies -->
+			<hardnessMultipler>1</hardnessMultipler>		<!-- how much extra time or less time it takes, when using this material for crafting -->
+			<sharpnessMultiplier>1</sharpnessMultiplier>	<!-- how sharp this material usually make an edge -->
+			<brittleMultiplier>1</brittleMultiplier>		<!-- how brittle a finished product will be when crafted with this material -->
+			<difficultyMultipler>1</difficultyMultipler>	<!-- how much extra or less skill difficulty is added or substracted when using this material -->
+			<volumeMultipler>1</volumeMultipler>			<!-- Se materialMultipler filen i Mechanics folderen-->
+	</nameObject>
+</name>
